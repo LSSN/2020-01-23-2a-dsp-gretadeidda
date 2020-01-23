@@ -1,0 +1,12 @@
+import("stdfaust.lib");
+
+cutoff = vslider("cut-off[style:knob]",1000,20,20000,1);
+process=fi.lowpass(2,cutoff) : fi.highpass(2,cutoff);
+//le tecniche di sintesi del suono sono
+//sottrattiva che ci permette di sottrarre il suono che viene filtrato attraverso lo spettrogramma
+//additiva
+//modulazione 
+//non lineari 
+//
+//la sintesi  sintetizza il suono
+//nell' analisi del suono prendiamo delle caratteristiche che sono ampiezza, frequena, durata e timbro che poi vengono sintetizzate 
