@@ -4,6 +4,8 @@ cutoff = vslider("cut-off[style:knob]",1000,20,20000,1);
 process=fi.lowpass(2,cutoff) : fi.highpass(2,cutoff);
 //le tecniche di sintesi del suono sono
 //sottrattiva che ci permette di sottrarre il suono che viene filtrato attraverso lo spettrogramma
+//GS - LO SPETTROGRAMMA È UNO STRUMENTO DI ANALISI, IL SUONO COMPLESSO SI FILTRA ATTRAVERSO UN FILTRO
+
 //additiva
 //modulazione 
 //non lineari 
